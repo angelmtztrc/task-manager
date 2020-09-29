@@ -6,7 +6,7 @@
 
 .column {
   min-height: 185px;
-  width: 90%;
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
