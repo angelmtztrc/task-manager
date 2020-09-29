@@ -3,3 +3,14 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.column {
+  min-height: 185px;
+  width: 90%;
+}
+
+@media (min-width: 1024px) {
+  .column {
+    width: calc(33.3% - 2rem);
+  }
+}

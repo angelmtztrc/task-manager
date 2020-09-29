@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 
-const Form = ({ tasks, setTasks, setError }) => {
+const Form = ({ state, setState, setError }) => {
   const [task, setTask] = useState({
     description: ''
   });
@@ -26,14 +26,19 @@ const Form = ({ tasks, setTasks, setError }) => {
     }
 
     // Save in the App state
-    setTasks([
-      ...tasks,
-      {
-        description,
-        id: v4(),
-        status: 'PENDING'
+    setState({
+      ...state,
+      ['TODO']: {
+        ...state['TODO'],
+        items: [
+          ...state['TODO'].items,
+          {
+            description,
+            id: v4()
+          }
+        ]
       }
-    ]);
+    });
 
     // Clear form
     setTask({
@@ -75,8 +80,8 @@ const Form = ({ tasks, setTasks, setError }) => {
 };
 
 Form.propTypes = {
-  tasks: PropTypes.array.isRequired,
-  setTasks: PropTypes.func.isRequired
+  state: PropTypes.object.isRequired,
+  setState: PropTypes.func.isRequired
 };
 
 export default Form;
