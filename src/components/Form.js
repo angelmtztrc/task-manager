@@ -43,7 +43,10 @@ const Form = ({ tasks, setTasks, setError }) => {
 
   return (
     <div className="w-full flex justify-center items-center">
-      <form onSubmit={handleSubmit} className="w-2/5 relative">
+      <form
+        onSubmit={handleSubmit}
+        className="w-4/5 md:w-3/5 lg:w-2/5 relative"
+      >
         <input
           value={task.description}
           onChange={handleChange}
