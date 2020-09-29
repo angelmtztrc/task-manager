@@ -34,6 +34,11 @@ const Form = ({ tasks, setTasks, setError }) => {
         status: 'PENDING'
       }
     ]);
+
+    // Clear form
+    setTask({
+      description: ''
+    });
   };
 
   return (

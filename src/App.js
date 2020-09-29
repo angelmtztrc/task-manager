@@ -35,7 +35,7 @@ function App() {
                 .map(task => (
                   <li
                     key={task.id}
-                    className="px-4 py-3 text-center bg-white rounded-md shadow"
+                    className="mb-2 px-4 py-3 text-center bg-white rounded-md shadow"
                   >
                     <p className="text-gray-600">{task.description}</p>
                   </li>
@@ -55,7 +55,7 @@ function App() {
                 .map(task => (
                   <li
                     key={task.id}
-                    className="px-4 py-3 text-center bg-white rounded-md shadow"
+                    className="mb-2 px-4 py-3 text-center bg-white rounded-md shadow"
                   >
                     <p className="text-gray-600">{task.description}</p>
                   </li>
@@ -75,7 +75,7 @@ function App() {
                 .map(task => (
                   <li
                     key={task.id}
-                    className="px-4 py-3 text-center border-2 border-green-300 bg-white rounded-md shadow"
+                    className="mb-2 px-4 py-3 text-center border-2 border-green-300 bg-white rounded-md shadow"
                   >
                     <p className="text-gray-600 line-through">
                       {task.description}
