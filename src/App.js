@@ -2,7 +2,7 @@ import React from 'react';
 
 function App() {
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full min-h-screen box-border">
       <header className="bg-green-500 pt-12 pb-32">
         <div className="container mx-auto h-64 flex flex-col justify-center items-center">
           <h1 className="text-5xl text-white font-bold mb-3">Task Manager</h1>
@@ -34,7 +34,10 @@ function App() {
       </header>
       <div className="-m-24 container mx-auto">
         <div className="flex justify-between">
-          <div className="w-full h-full p-8 bg-gray-200 rounded-md shadow-md">
+          <div
+            style={{ minHeight: '177px' }}
+            className="w-full h-full p-8 bg-gray-200 rounded-md shadow-md"
+          >
             <h2 className="mb-5 text-3xl text-green-500 text-center font-bold">
               Todo
             </h2>
@@ -44,7 +47,10 @@ function App() {
               </li>
             </ul>
           </div>
-          <div className="w-full h-full p-8 bg-gray-200 rounded-md shadow-md mx-16">
+          <div
+            style={{ minHeight: '177px' }}
+            className="w-full h-full p-8 bg-gray-200 rounded-md shadow-md mx-16"
+          >
             <h2 className="mb-5 text-3xl text-green-500 text-center font-bold">
               In Progress
             </h2>
@@ -54,7 +60,10 @@ function App() {
               </li>
             </ul>
           </div>
-          <div className="w-full h-full p-8 bg-gray-200 rounded-md shadow-md">
+          <div
+            style={{ minHeight: '177px' }}
+            className="w-full h-full p-8 bg-gray-200 rounded-md shadow-md"
+          >
             <h2 className="mb-5 text-3xl text-green-500 text-center font-bold">
               Done
             </h2>
